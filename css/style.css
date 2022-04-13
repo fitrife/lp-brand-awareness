@@ -482,6 +482,23 @@ textarea.form-control {
 .footer-bottom p {
   font-size: 14px;
 }
+.whatsapp_float {
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+        font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+        z-index:100;
+}
+.whatsapp-icon {
+	margin-top:16px;
+}
 /* ----------------------------
  21. =banner section
  ------------------------------ */
@@ -741,10 +758,9 @@ textarea.form-control {
 }
 .apply-section .apply-title {
   font-family: "Nunito", sans-serif;
+  color: var(--white);
   font-size: 28px;
   font-weight: 400;
-  width: 100vh;
-  margin: auto;
 }
 
 /* ----------------------------
@@ -762,6 +778,9 @@ textarea.form-control {
  ------------------------------ */
 .testimonial-section .testimonial-section-row {
   margin: auto;
+}
+.testmonial-section-row img {
+  width: 100px;
 }
 
 /* ----------------------------
