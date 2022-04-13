@@ -1,0 +1,288 @@
+/* Responsive CSS */
+
+@media (max-width: 1199px) {
+  .container {
+    max-width: 100%;
+    --bs-gutter: 30px;
+  }
+}
+
+@media (max-width: 991px) {
+  .header {
+    padding: 12px 0;
+  }
+  .header-backdrop,
+  .header-close-btn,
+  .header-hamburger-btn {
+    display: block;
+  }
+  .header-hamburger-btn {
+    height: 34px;
+    width: 40px;
+    cursor: pointer;
+    border: 0;
+    background-color: transparent;
+  }
+  .header-hamburger-btn span {
+    display: block;
+    height: 2px;
+    width: 24px;
+    background-color: var(--black-90);
+    position: relative;
+    margin: auto;
+  }
+  .header-hamburger-btn span::before,
+  .header-hamburger-btn span::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: var(--black-90);
+  }
+  .header-hamburger-btn span::before {
+    top: -7px;
+  }
+  .header-hamburger-btn span::after {
+    top: 7px;
+  }
+  .header-close-btn {
+    height: 40px;
+    width: 40px;
+    background-color: var(--main-color);
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    color: var(--WHITE);
+    border: 0;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .header-menu {
+    position: fixed;
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    right: -300px;
+    z-index: 1000;
+    padding: 70px 0 50px;
+    transition: all 0.5s ease;
+    background-color: var(--white);
+    box-shadow: var(--shadow);
+    overflow-y: auto;
+  }
+  .header-menu.open {
+    right: 0;
+    visibility: visible;
+  }
+  .header .menu-item {
+    display: block;
+    margin: 0;
+  }
+  .header .menu-item > a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    border-bottom: 1px solid var(--border-color-1);
+  }
+  .header .menu-item:first-child > a {
+    border-top: 1px solid var(--border-color-1);
+  }
+  .header .menu-item.active > a i {
+    transform: rotate(-180deg);
+  }
+  .header .sub-menu {
+    position: relative;
+    width: 100%;
+    opacity: 1;
+    visibility: visible;
+    box-shadow: none;
+    transform: translateY(0);
+    top: auto;
+    padding: 0;
+    border-radius: 0;
+    max-height: 0;
+    overflow: hidden;
+  }
+  .header .sub-menu-item a {
+    padding: 12px 45px;
+    border-bottom: 1px solid var(--border-color-1);
+  }
+  .header-backdrop {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.5s ease;
+    visibility: hidden;
+    background-color: var(--white);
+  }
+  .header-backdrop.active {
+    visibility: visible;
+    opacity: 0.8;
+  }
+  .banner-text {
+    margin-right: -10%;
+  }
+  .banner-text h1 {
+    font-size: 35px;
+  }
+  .register-section .section-title .sub-title {
+    font-size: 30px;
+  }
+  .register-section .steps-number-circle {
+    width: 68px;
+    height: 68px;
+  }
+  .register-section .steps-number {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 900;
+  }
+  .payment-flow-section .section-title .sub-title {
+    font-size: 30px;
+  }
+  .payment-flow-section .steps-number-circle {
+    width: 68px;
+    height: 68px;
+  }
+  .payment-flow-section .steps-number {
+    color: var(--white);
+    font-size: 24px;
+    font-weight: 900;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    --bs-gutter-x: 15px;
+  }
+  .box {
+    padding: 20px 15px;
+  }
+  .banner-text {
+    margin: auto;
+  }
+  .banner-text h1 {
+    font-size: 24px;
+  }
+  .section-title .title,
+  h3,
+  .banner-text h2 {
+    font-size: 18px;
+  }
+  .form-title,
+  .section-title .sub-title {
+    font-size: 22px;
+  }
+  .relation-section .relation-items .item {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .steps-number-circle {
+    width: 62px;
+    height: 62px;
+  }
+  .steps-number {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 900;
+  }
+  .register-section img {
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .register-section .col-5 {
+    margin-left: 5px;
+  }
+  .register-section .col-1 {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+  .payment-section i {
+    font-size: 70px;
+  }
+}
+
+@media (max-width: 575px) {
+  .section-title .title {
+    font-size: 28px;
+  }
+  .header-logo {
+    width: 200px;
+  }
+  .banner-section {
+    max-height: 100vh;
+    background-position: 80%;
+  }
+  .banner-section .banner-text {
+    margin: auto;
+  }
+  .reason-section i {
+    font-size: 68px;
+  }
+  .facility-section i {
+    font-size: 58px;
+  }
+  .register-section .steps-number-circle {
+    width: 58px;
+    height: 58px;
+  }
+  .register-section .steps-number {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .register-section img {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .register-section .col-5 {
+    margin-left: 15px;
+  }
+  .register-section .col-1 {
+    margin: auto;
+  }
+  .payment-flow-section img {
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .payment-flow-section .col-5 {
+    margin-left: 15px;
+  }
+  .payment-flow-section .col-1 {
+    margin: auto;
+  }
+  .payment-flow-section .text-left {
+    margin-right: 0px;
+  }
+  .payment-flow-section .steps-number-circle {
+    width: 58px;
+    height: 58px;
+  }
+  .payment-flow-section .steps-number {
+    color: var(--white);
+    font-size: 20px;
+    font-weight: 900;
+  }
+  .footer-item {
+    text-align: center;
+  }
+  .footer-item img {
+    display: block;
+    margin: 0 60% 0 60%;
+  }
+  .header-logo a {
+    font-size: 22px;
+  }
+  .modal-dialog {
+    margin: 8px 15px;
+  }
+}

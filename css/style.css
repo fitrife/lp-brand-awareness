@@ -1,0 +1,868 @@
+/* --------------------------------------------------------------------
+
+    *************** Table of Contents ***************
+
+01. =google fonts
+02. =variables
+03. =overrides variables for - theme dark
+04. =base
+05. =box
+06. =customized bootstrap classes
+07. =animation keyframes
+08. =section - padding , title
+09. =button
+10. =page loader
+11. =circular img
+12. =forms
+13. =video modal
+14. =pagination
+15. =breadcrumb
+16. =tabs
+17. =bubble animation
+18. =style switcher
+19. =header
+20. =footer
+21. =banner section
+22. =fun facts section
+23. =courses section
+24. =testimonials section
+25. =bai section
+26. =course details section
+27. =contact section
+28. =team section
+29. =dashboard section
+
+----------------------------------------------------------------------- */
+
+/* ----------------------------
+ 01. =google fonts
+ ------------------------------ */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+
+/* ----------------------------
+ 02. =variables
+ ------------------------------ */
+:root {
+  /* =colors */
+  --orange: hsl(36, 80%, 50%);
+  --white: hsl(0, 0%, 100%);
+  --WHITE: hsl(0, 0%, 100%);
+  --BLACK: hsl(0, 0%, 0%);
+  --black-90: hsl(0, 0%, 10%);
+  --black-70: hsl(0, 0%, 30%);
+  --black-alpha-40: hsla(0, 0%, 0%, 0.4);
+  --yellow-light: hsl(44, 95%, 83%);
+  --green: #70af85;
+  --red-light: hsl(0, 84%, 80%);
+  --orange-light: hsl(22, 85%, 80%);
+  --select-box-bg-color: hsl(0, 0%, 100%);
+  --border-color-1: hsl(0, 0%, 90%);
+  --line-color: hsl(143, 82%, 18%);
+  --body-grey-color: rgb(220, 220, 220);
+
+  /* =transition */
+  --trans-05: all 0.5s ease;
+  --trans-03: all 0.3s ease;
+  --trans-02: all 0.2s ease;
+}
+
+/* ----------------------------
+ 04. =base
+ ------------------------------ */
+body {
+  background-color: var(--body-bg-color);
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  color: var(--black-70);
+  min-height: 100vh;
+  overflow-x: hidden;
+  margin-left: 0px;
+}
+a {
+  color: var(--main-color);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--main-color);
+}
+img {
+  max-width: 100%;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--black-90);
+  line-height: 1.3;
+}
+h3 {
+  font-size: 20px;
+}
+i {
+  color: var(--main-color);
+}
+::selection {
+  color: var(--WHITE);
+  background-color: var(--main-color);
+}
+/* ----------------------------
+ 05. =box
+ ------------------------------ */
+.box {
+  background-color: var(--white);
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  padding: 30px;
+}
+
+/* ----------------------------------
+ 06. =customized bootstrap classes
+ ------------------------------------ */
+.container {
+  --bs-gutter-x: 15px;
+  max-width: 1140px;
+}
+.row {
+  --bs-gutter-x: 30px;
+}
+/* hr {
+  display: flex;
+  margin: auto;
+  border: 2px solid var(--main-color);
+  width: 50%;
+} */
+
+/* ----------------------------
+ 07. =animation keyframes
+ ------------------------------ */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes bubble {
+  0% {
+    transform: translateY(0vh);
+    opacity: 0;
+  }
+  5%,
+  95% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100vh);
+    opacity: 0;
+  }
+}
+@keyframes loader {
+  0% {
+    transform: rotate(0deg);
+  }
+  25%,
+  50% {
+    transform: rotate(180deg);
+  }
+  75%,
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes loaderIn {
+  0%,
+  25%,
+  100% {
+    height: 0%;
+  }
+  50%,
+  75% {
+    height: 100%;
+  }
+}
+
+/* ------------------------------
+ 08. =section - padding , title
+ -------------------------------- */
+.section-padding {
+  padding: 60px 0;
+}
+.section-title {
+  margin-bottom: 0px;
+}
+.section-title .title {
+  font-family: "Nunito", sans-serif;
+  font-size: 35px;
+  color: var(--black-90);
+  text-transform: uppercase;
+}
+.section-title .title:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 0.5em;
+  border-top: 1px solid black;
+  z-index: -1;
+}
+
+/* ----------------------------
+ 09. =button
+ ------------------------------ */
+.btn-theme {
+  background-color: var(--main-color);
+  color: var(--WHITE);
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+.btn-theme:hover {
+  color: var(--main-color);
+  background-color: var(--white);
+  border: 1px solid var(--main-color);
+}
+.btn-theme:focus {
+  box-shadow: 0 0 8px var(--main-color);
+}
+.btn-theme-2 {
+  background-color: var(--black-90);
+  color: var(--WHITE);
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 500;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
+}
+.btn-theme-2:hover {
+  color: var(--black-90);
+  background-color: var(--white);
+  border: 1px solid var(--black-90);
+}
+.btn-theme-2:focus {
+  box-shadow: 0 0 8px var(--main-color);
+}
+.btn-block {
+  width: 100%;
+}
+.btn-form {
+  height: 48px;
+}
+
+/* ----------------------------
+ 10. =page loader
+ ------------------------------ */
+.page-loader {
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1001;
+  display: flex;
+  background-color: var(--white);
+}
+.page-loader.fade-out {
+  opacity: 0;
+  transition: all 0.6s ease;
+}
+.page-loader div {
+  margin: auto;
+  height: 32px;
+  width: 32px;
+  border: 4px solid var(--main-color);
+  position: relative;
+  animation: loader 2s linear infinite;
+}
+.page-loader div::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: var(--main-color);
+  left: 0;
+  top: 0;
+  animation: loaderIn 2s linear infinite;
+}
+
+/* ----------------------------
+ 12. =forms
+ ------------------------------ */
+.form-title {
+  font-size: 24px;
+  margin: 0 0 30px;
+  font-weight: 600;
+}
+.font-control::placeholder {
+  color: var(--black-70);
+}
+.form-group {
+  margin-bottom: 25px;
+  position: relative;
+}
+.form-control {
+  height: 48px;
+  border-color: var(--border-color-2);
+  columns: var(--black-90);
+  background-color: transparent;
+}
+.form-control:focus {
+  background-color: transparent;
+  border-color: var(--border-color-1);
+  color: var(--black-90);
+  box-shadow: none;
+}
+.select-icon {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 13px;
+}
+select.form-control:focus option {
+  background-color: var(--select-box-bg-color);
+}
+textarea.form-control {
+  height: 120px;
+  resize: none;
+}
+
+/* ----------------------------
+ 13. =video modal
+ ------------------------------ */
+.video-modal .btn-close {
+  height: 35px;
+  width: 35px;
+  background-image: none;
+  border-radius: 50%;
+  opacity: 1;
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: -35px;
+  color: var(--WHITE);
+  font-size: 16px;
+  padding: 0;
+}
+.video-modal .modal-content {
+  border: 0;
+}
+
+/* ----------------------------
+ 14. =pagination
+ ------------------------------ */
+.page-item.disabled .page-link,
+.page-link {
+  border: none;
+  background-color: transparent;
+  color: var(--black-70);
+}
+.page-item.active .page-link {
+  background-color: var(--main-color);
+}
+.page-link:hover {
+  background-color: var(--main-color);
+  color: var(--WHITE);
+}
+
+/* ----------------------------
+ 16. =tabs
+ ------------------------------ */
+.nav-tabs .nav-link {
+  background-color: var(--white);
+  text-transform: capitalize;
+  border-color: var(--border-color-2);
+  padding: 5px 12px;
+  margin: 0 5px 10px;
+  border-radius: 5px;
+  color: var(--black-70);
+  font-size: 16px;
+}
+.nav-tabs .nav-link.hover {
+  border-color: var(--border-color-2);
+}
+.nav-tabs .nav-link.active {
+  background-color: var(--main-color);
+  border-color: transparent;
+  color: var(--WHITE);
+}
+
+/* ----------------------------
+ 19. =header
+ ------------------------------ */
+.header {
+  border-bottom: 1px solid var(--border-color-2);
+}
+.header-logo img {
+  max-height: 35px;
+  background-color: transparent;
+}
+.header-logo span {
+  color: var(--main-color);
+}
+.header .menu-item {
+  display: inline-block;
+  margin-left: 40px;
+  position: relative;
+}
+.header .menu-item > a {
+  display: block;
+  padding: 24px 0;
+  font-weight: 400;
+  color: var(--black-90);
+  text-transform: capitalize;
+  transition: 0.3s ease;
+}
+.header .menu-item a:hover,
+.header .sub-menu-item:hover > a {
+  color: var(--main-color);
+}
+.header .menu-item > a i {
+  font-size: 13px;
+  margin-left: 3px;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+.header .sub-menu {
+  position: absolute;
+  top: 100%;
+  background-color: var(--white);
+  left: 0;
+  width: 210px;
+  padding: 10px 0;
+  border-radius: 5px;
+  box-shadow: var(--shadow);
+  transition: all 0.3 ease;
+  z-index: 2;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateY(10px);
+}
+@media (min-width: 992px) {
+  .header .menu-item:hover > .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.header .sub-menu-item a {
+  display: block;
+  padding: 10px 20px;
+  color: var(--black-90);
+  text-transform: capitalize;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+.header-backdrop,
+.header-close-btn,
+.header-hamburger-btn {
+  display: none;
+}
+
+/* ----------------------------
+ 20. =footer
+ ------------------------------ */
+.footer {
+  background-color: var(--body-grey-color);
+}
+.footer-bottom p {
+  font-size: 14px;
+}
+/* ----------------------------
+ 21. =banner section
+ ------------------------------ */
+.banner-section {
+  position: relative;
+  background-image: url("../img/banner-img-2.png");
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
+}
+.banner-section .banner-card {
+  background-color: rgba(245, 245, 245, 0.7);
+}
+.banner-section .banner-text {
+  opacity: 1;
+}
+.banner-text h1 {
+  font-size: 45px;
+  font-weight: 700;
+}
+
+/* ----------------------------
+ 23. =relation section
+ ------------------------------ */
+.relation-section .relation-row {
+  margin: auto;
+}
+.relation-item {
+  margin: auto;
+}
+
+/* ----------------------------
+ 23. =reason section
+ ------------------------------ */
+.reason-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+}
+.reason-section i {
+  color: var(--green);
+}
+.reason-section .reason-section-row {
+  margin: auto;
+}
+.reason-item {
+  margin-top: auto;
+}
+.reason-section .card {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* ----------------------------
+ 24. =why-certif section
+ ------------------------------ */
+.why-certif-section .reason-section-row {
+  margin: auto;
+}
+.why-certif-section .icon {
+  padding-right: 0px;
+}
+.why-certif-section .item-inner {
+  margin-left: 2px;
+}
+
+/* ----------------------------
+ 23. =facilty-1 section
+ ------------------------------ */
+.facility-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+}
+.facility-section i {
+  color: var(--green);
+}
+.facility-section .facility-1-section-section-row {
+  margin: auto;
+}
+.facility-item {
+  margin-top: auto;
+}
+.facility-section .card {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* ----------------------------
+ 26. =promo section
+ ------------------------------ */
+.promo-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+}
+.promo-2-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+}
+.promo-2-section .card {
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.promo-2-section .card:hover {
+  background: var(--main-color);
+  color: var(--white);
+}
+.promo-2-section .card:hover h2,
+.promo-2-section .card:hover strong,
+.promo-2-section .card:hover i {
+  color: var(--white);
+}
+.promo-section .promo-section-row {
+  margin: auto;
+}
+.promo-item {
+  margin-top: auto;
+}
+.promo-section .card {
+  text-align: left;
+  margin-bottom: 5px;
+}
+.promo-section .price-discount {
+  font-size: 18px;
+  color: var(--black-90);
+  text-decoration: line-through;
+}
+.promo-section .card-price {
+  font-size: 18px;
+}
+.promo-fee-wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-column-gap: 16px;
+  grid-row-gap: 16px;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: auto;
+  grid-template-rows: auto;
+}
+.promo-fee-pricing-card {
+  display: flex;
+  padding: 40px 31px 50px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -webkit-align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  border-radius: 16px;
+  background-color: #fff;
+}
+.promo-fee-heading-h3 {
+  font-size: 18px;
+  line-height: 25px;
+}
+.promo-fee-price {
+  margin-top: 20px;
+  -webkit-align-self: auto;
+  -ms-flex-item-align: auto;
+  -ms-grid-row-align: auto;
+  align-self: auto;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+  color: var(--black-90);
+  font-size: 22px;
+  font-weight: 600;
+}
+.promo-fee-divider {
+  width: 100%;
+  height: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: var(--border-color-1);
+}
+.promo-fee-benefit-wrapper {
+  display: flex;
+  margin-bottom: 15px;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.promo-fee-benefit-wrapper i {
+  color: var(--main-color);
+}
+
+/* ----------------------------
+ 26. =register section
+ ------------------------------ */
+.text-align-center {
+  text-align: center;
+}
+.steps-subheading {
+  max-width: 27.1rem;
+  margin-right: auto;
+  margin-left: auto;
+}
+.steps-number-circle {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: -10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: var(--green);
+}
+.steps-number {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 900;
+}
+.steps-heading-h3 {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.steps-p {
+  text-align: left;
+}
+
+/* ----------------------------
+ 26. =schedule section
+ ------------------------------ */
+.schedule-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+}
+.schedule-col img {
+  margin: auto;
+  width: 480px;
+}
+
+/* ----------------------------
+ 26. =apply section
+ ------------------------------ */
+.apply-section {
+  background-color: var(--main-color);
+  color: var(--white);
+}
+.apply-section .apply-title {
+  font-family: "Nunito", sans-serif;
+  font-size: 28px;
+  font-weight: 400;
+  width: 100vh;
+  margin: auto;
+}
+
+/* ----------------------------
+ 26. =support section
+ ------------------------------ */
+.support-section {
+  margin: auto;
+}
+.support-section .support-row {
+  margin: auto;
+}
+
+/* ----------------------------
+ 27. =testimonal section
+ ------------------------------ */
+.testimonial-section .testimonial-section-row {
+  margin: auto;
+}
+
+/* ----------------------------
+ 27. =payment section
+ ------------------------------ */
+.payment-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+}
+.payment-section .payment-section-row {
+  margin: auto;
+}
+.payment-item {
+  margin-top: auto;
+}
+.payment-section .card {
+  text-align: center;
+  margin-bottom: 5px;
+  background-color: var(--main-color);
+  color: var(--white);
+  border-radius: 15px;
+}
+.payment-section .card i {
+  color: var(--white);
+}
+.payment-section .card-title {
+  color: var(--white);
+}
+
+.payment-flow-section .steps-number-circle {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 80px;
+  height: 80px;
+  margin-right: auto;
+  margin-left: -10px;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border-radius: 50px;
+  background-color: var(--green);
+}
+.payment-flow-section .steps-number {
+  color: var(--white);
+  font-size: 30px;
+  font-weight: 900;
+}
+.payment-flow-section .steps-heading-h3 {
+  text-align: left;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+.payment-flow-section .steps-p {
+  text-align: left;
+}
+
+/* ----------------------------
+ 28. =gallery section
+ ------------------------------ */
+.gallery-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+}
+.gallery-section img {
+  background-color: var(--white);
+  padding: 15px;
+  width: 100%;
+  box-shadow: 0 0 15px var(--shadow);
+  cursor: pointer;
+}
+#gallery-modal .modal-img {
+  width: 100%;
+}
+.lightbox-carousel.carousel {
+  width: auto;
+}
+.lightbox-carousel.carousel img {
+  background-color: var(--white);
+}
+.lightbox-carousel.carousel a {
+  color: var(--black-90);
+}
+
+/* ----------------------------
+ 29. =location section
+ ------------------------------ */
+.location-section .location-section-row {
+  margin: auto;
+}
+.location-item {
+  margin-top: auto;
+}
+.location-section .card {
+  text-align: center;
+  margin-bottom: 5px;
+}
