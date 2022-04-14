@@ -39,7 +39,7 @@
  ------------------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
 
 /* ----------------------------
  02. =variables
@@ -202,10 +202,11 @@ i {
   margin-bottom: 0px;
 }
 .section-title .title {
-  font-family: "Nunito", sans-serif;
-  font-size: 35px;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 2.2rem;
+  font-weight: 700;
   color: var(--black-90);
-  text-transform: uppercase;
+  text-transform:capitalize;
 }
 .section-title .title:after {
   content: "";
@@ -505,32 +506,37 @@ textarea.form-control {
 .banner-section {
   background-image: url("../img/banner-img.png");
   display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    padding-top: 13rem;
-    padding-bottom: 6.5rem;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    background-position: 50% 50%;
-    background-size: cover;
-}
-.banner-section .banner-card {
-  background-color: rgba(245, 245, 245, 0.7);
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 13rem;
+  padding-bottom: 6.5rem;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-position: 50% 50%;
+  background-size: cover;
 }
 .banner-section .banner-text {
   opacity: 1;
 }
 .banner-text h1 {
-  font-size: 45px;
-  font-weight: 700;
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-size: 3.375rem;
+  font-weight: 1000;
+}
+.banner-text h1 span {
+  background-color: var(--main-color);
+  color: var(--body-grey-color);
+}
+.banner-section button {
+  border-radius: 25px;
 }
 
 /* ----------------------------

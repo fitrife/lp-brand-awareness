@@ -209,19 +209,28 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 479px) {
   .section-title .title {
-    font-size: 28px;
+    font-size: 1.5rem;
+    line-height: 2rem;
   }
   .header-logo {
     width: 200px;
   }
   .banner-section {
-    max-height: 100vh;
-    background-position: 80%;
+    max-height: 90vh;
+    background-position: 60%;
   }
   .banner-section .banner-text {
-    margin: auto;
+    margin-top: -100px;
+    margin-left: 10px;
+  }
+  .banner-section .banner-text h1 {
+    font-size: 2rem;
+    width: 250px;
+  }
+  .banner-section .banner-text p {
+    width: 210px;
   }
   .relation-item {
     margin-top: -12%;
