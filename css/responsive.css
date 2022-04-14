@@ -244,9 +244,16 @@
   .reason-section i {
     font-size: 68px;
   }
-  
+  .facility-section {
+    font-size: 14px;
+    color: var(--black-90);
+  }
   .facility-section i {
-    font-size: 58px;
+    font-size: 30px;
+  }
+  .facility-section .card {
+    background-color: transparent;
+    border: 0px;
   }
   .register-section .steps-number-circle {
     width: 58px;
@@ -258,9 +265,10 @@
     font-weight: 900;
   }
   .register-section img {
-    margin-top: 50px;
+    margin-top: 0px;
     margin-left: auto;
     margin-right: auto;
+    width: 180px;
   }
   .register-section .col-5 {
     margin-left: 15px;
@@ -268,7 +276,9 @@
   .register-section .col-1 {
     margin: auto;
   }
-  .payment-flow-section img {
+  .register-section .steps-heading-h3 {
+    text-align: center;
+  }nt-flow-section img {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;

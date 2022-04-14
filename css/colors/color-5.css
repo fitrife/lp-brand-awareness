@@ -1,7 +1,7 @@
 :root {
   --hue-value-1: 151;
   --hue-value-2: 0;
-  --main-color: #755E8C;
+  --main-color: hsl(250,31%,40%);
   --button-hover-color: #ffffff;
   /* --body-bg-color: hsl(var(--hue-value-1), 55%, 97%); */
   --border-color-2: hsl(var(--hue-value-1), 40%, 93%);
