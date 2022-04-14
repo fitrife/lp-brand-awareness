@@ -46,7 +46,7 @@
  ------------------------------ */
 :root {
   /* =colors */
-  --orange: hsl(36, 80%, 50%);
+  --orange: hsl(21,100%,81%);
   --white: hsl(0, 0%, 100%);
   --WHITE: hsl(0, 0%, 100%);
   --BLACK: hsl(0, 0%, 0%);
@@ -54,8 +54,8 @@
   --black-70: hsl(0, 0%, 30%);
   --black-alpha-40: hsla(0, 0%, 0%, 0.4);
   --yellow-light: hsl(44, 95%, 83%);
-  --green: hsl(218,66%,69%);
-  --red-light: hsl(0, 84%, 80%);
+  --green: hsl(134,56%,91%);
+  --blue-light: hsl(216,62%,76%);
   --orange-light: hsl(22, 85%, 80%);
   --select-box-bg-color: hsl(0, 0%, 100%);
   --border-color-1: hsl(0, 0%, 90%);
@@ -216,7 +216,7 @@ i {
   z-index: -1;
 }
 .section-title .title span {
-  text-decoration: underline var(--main-color);
+  text-decoration: underline var(--blue-light);
 }
 
 /* ----------------------------
@@ -557,7 +557,7 @@ textarea.form-control {
   border-radius: 25px;
 }
 .reason-section i {
-  color: var(--green);
+  color: var(--black-90);
 }
 .reason-section .reason-section-row {
   margin: auto;
@@ -592,7 +592,7 @@ textarea.form-control {
   border-radius: 25px;
 }
 .facility-section i {
-  color: var(--green);
+  color: var(--orange-light);
 }
 .facility-section .facility-1-section-section-row {
   margin: auto;
@@ -714,39 +714,16 @@ textarea.form-control {
 /* ----------------------------
  26. =register section
  ------------------------------ */
+.register-section img {
+  max-width: 300px;
+}
 .text-align-center {
   text-align: center;
 }
 .steps-subheading {
+  text-align: center;
   max-width: 27.1rem;
-  margin-right: auto;
-  margin-left: auto;
-}
-.steps-number-circle {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 80px;
-  height: 80px;
-  margin-right: auto;
-  margin-left: -10px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50px;
-  background-color: var(--green);
-}
-.steps-number {
-  color: var(--white);
-  font-size: 30px;
-  font-weight: 900;
+  margin: auto;
 }
 .steps-heading-h3 {
   text-align: left;
@@ -765,16 +742,16 @@ textarea.form-control {
   border-radius: 25px;
 }
 .schedule-col img {
-  margin: auto;
-  width: 480px;
+  margin-top: -15%;
+  width: 300px;
 }
 
 /* ----------------------------
  26. =apply section
  ------------------------------ */
 .apply-section {
-  background-color: var(--main-color);
-  color: var(--white);
+  background-color: var(--blue-light);
+  color: var(--black-970);
 }
 .apply-section .apply-title {
   font-family: "Nunito", sans-serif;

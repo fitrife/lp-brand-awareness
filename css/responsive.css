@@ -278,7 +278,15 @@
   }
   .register-section .steps-heading-h3 {
     text-align: center;
-  }nt-flow-section img {
+  }
+  .schedule-section {
+    text-align: center;
+  }
+  .schedule-col img {
+    margin-top: -15px;
+    width: 225px;
+  }
+  .payment-flow-section img {
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
