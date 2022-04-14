@@ -503,11 +503,24 @@ textarea.form-control {
  21. =banner section
  ------------------------------ */
 .banner-section {
-  position: relative;
   background-image: url("../img/banner-img.png");
-  min-height: 100vh;
-  background-size: cover;
-  background-position: center;
+  display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 13rem;
+    padding-bottom: 6.5rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    background-position: 50% 50%;
+    background-size: cover;
 }
 .banner-section .banner-card {
   background-color: rgba(245, 245, 245, 0.7);

@@ -223,9 +223,16 @@
   .banner-section .banner-text {
     margin: auto;
   }
+  .relation-item {
+    margin-top: -12%;
+    margin-bottom: -12%;
+    margin-left: 10px;
+    margin-left: 10px;
+  }
   .reason-section i {
     font-size: 68px;
   }
+  
   .facility-section i {
     font-size: 58px;
   }
