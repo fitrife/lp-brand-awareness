@@ -39,7 +39,7 @@
  ------------------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
 
 /* ----------------------------
  02. =variables
@@ -73,7 +73,7 @@
  ------------------------------ */
 body {
   background-color: var(--body-bg-color);
-  font-family: "Poppins", sans-serif;
+  font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: var(--black-70);
@@ -198,15 +198,13 @@ i {
 .section-padding {
   padding: 60px 0;
 }
-.section-title {
-  margin-bottom: 0px;
-}
 .section-title .title {
   font-family: 'Plus Jakarta Sans', sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
   color: var(--black-90);
   text-transform:capitalize;
+  margin-bottom: 2.5rem;
 }
 .section-title .title:after {
   content: "";
@@ -215,8 +213,10 @@ i {
   left: 0;
   right: 0;
   height: 0.5em;
-  border-top: 1px solid black;
   z-index: -1;
+}
+.section-title .title span {
+  text-decoration: underline var(--main-color);
 }
 
 /* ----------------------------
@@ -568,6 +568,7 @@ textarea.form-control {
 .reason-section .card {
   text-align: center;
   margin-bottom: 5px;
+  border-radius: 15px;
 }
 
 /* ----------------------------

@@ -72,37 +72,6 @@ function headerMenu() {
 }
 headerMenu();
 
-/* ----------------------------
-    theme colors
-------------------------------- */
-function themeColors() {
-  const colorStyle = document.querySelector(".js-color-style"),
-    themeColorContainer = document.querySelector(".js-theme-colors");
-
-  themeColorContainer.addEventListener("click", ({ target }) => {
-    if (target.classList.contains("js-theme-color-item")) {
-      localStorage.setItem("color", target.getAttribute("data-js-theme-color"));
-      setColor();
-    }
-  });
-  function setColor() {
-    let path = colorStyle.getAttribute("href").split("/");
-    path = path.slice(0, path.length - 1);
-    colorStyle.setAttribute("href", path.join("/") + "/" + localStorage.getItem("color") + ".css");
-
-    if (document.querySelector(".js-theme-color-item.active")) {
-      document.querySelector(".js-theme-color-item.active").classList.remove("active");
-    }
-    document.querySelector("[data-js-theme-color=" + localStorage.getItem("color") + "]").classList.add("active");
-  }
-  if (localStorage.getItem("color") !== null) {
-    setColor();
-  } else {
-    const defaultColor = colorStyle.getAttribute("href").split("/").pop().split(".").shift();
-    document.querySelector("[data-js-theme-color=" + defaultColor + "]").classList.add("active");
-  }
-}
-themeColors();
 
 /* ----------------------------
     gallery pop up

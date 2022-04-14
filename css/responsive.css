@@ -238,6 +238,9 @@
     margin-left: 10px;
     margin-left: 10px;
   }
+  .reason-section .card {
+    margin: .5rem;
+  }
   .reason-section i {
     font-size: 68px;
   }
