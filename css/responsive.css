@@ -239,7 +239,7 @@
     margin-left: 10px;
   }
   .reason-section .card {
-    margin: .5rem;
+    margin: 0.5rem;
   }
   .reason-section i {
     font-size: 68px;
@@ -258,6 +258,14 @@
   .register-section .steps-number-circle {
     width: 58px;
     height: 58px;
+  }
+  .register-section .change-position {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .register-section .change-position img {
+    margin-left: 10px;
   }
   .register-section .steps-number {
     color: var(--white);

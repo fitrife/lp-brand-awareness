@@ -11,6 +11,14 @@ window.addEventListener("load", () => {
 /* ----------------------------
     header menu
 ------------------------------- */
+$(window).on("scroll", function () {
+  if ($(window).scrollTop()) {
+    $("header").addClass("black");
+  } else {
+    $("header").removeClass("black");
+  }
+});
+
 function headerMenu() {
   const menu = document.querySelector(".js-header-menu"),
     backdrop = document.querySelector(".js-header-backdrop"),
@@ -71,7 +79,6 @@ function headerMenu() {
   });
 }
 headerMenu();
-
 
 /* ----------------------------
     gallery pop up

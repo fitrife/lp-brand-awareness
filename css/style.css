@@ -39,28 +39,32 @@
  ------------------------------ */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
 
 /* ----------------------------
  02. =variables
  ------------------------------ */
 :root {
   /* =colors */
-  --orange: hsl(21,100%,81%);
+  --orange: hsl(22, 80%, 71%);
+  --orange-light: hsl(22, 85%, 80%);
   --white: hsl(0, 0%, 100%);
   --WHITE: hsl(0, 0%, 100%);
   --BLACK: hsl(0, 0%, 0%);
   --black-90: hsl(0, 0%, 10%);
   --black-70: hsl(0, 0%, 30%);
+  --black-71: hsl(0, 0%, 29%);
   --black-alpha-40: hsla(0, 0%, 0%, 0.4);
   --yellow-light: hsl(44, 95%, 83%);
-  --green: hsl(134,56%,91%);
-  --blue-light: hsl(216,62%,76%);
-  --orange-light: hsl(22, 85%, 80%);
+  --green: hsl(140, 50%, 91%);
+  --green-light: hsl(134, 56%, 91%);
+  --blue-light: hsl(216, 62%, 76%);
+  --dark-blue: hsl(240, 25%, 38%);
+  --dark-blue-icon: hsl(252, 33%, 37%);
   --select-box-bg-color: hsl(0, 0%, 100%);
   --border-color-1: hsl(0, 0%, 90%);
   --line-color: hsl(143, 82%, 18%);
-  --body-grey-color: hsl(236,48%,94%);
+  --body-grey-color: hsl(236, 48%, 94%);
 
   /* =transition */
   --trans-05: all 0.5s ease;
@@ -73,7 +77,7 @@
  ------------------------------ */
 body {
   background-color: var(--body-bg-color);
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
   color: var(--black-70);
@@ -109,7 +113,7 @@ h3 {
   font-size: 20px;
 }
 i {
-  color: var(--main-color);
+  color: var(--black-70);
 }
 ::selection {
   color: var(--WHITE);
@@ -199,11 +203,11 @@ i {
   padding: 60px 0;
 }
 .section-title .title {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 2.2rem;
   font-weight: 700;
   color: var(--black-90);
-  text-transform:capitalize;
+  text-transform: capitalize;
   margin-bottom: 2.5rem;
 }
 .section-title .title:after {
@@ -216,7 +220,7 @@ i {
   z-index: -1;
 }
 .section-title .title span {
-  text-decoration: underline var(--blue-light);
+  text-decoration: underline var(--orange);
 }
 
 /* ----------------------------
@@ -384,7 +388,7 @@ textarea.form-control {
  16. =tabs
  ------------------------------ */
 .nav-tabs .nav-link {
-  background-color: var(--white);
+  background-color: transparent;
   text-transform: capitalize;
   border-color: var(--border-color-2);
   padding: 5px 12px;
@@ -394,6 +398,7 @@ textarea.form-control {
   font-size: 16px;
 }
 .nav-tabs .nav-link.hover {
+  font-weight: bold;
   border-color: var(--border-color-2);
 }
 .nav-tabs .nav-link.active {
@@ -408,12 +413,12 @@ textarea.form-control {
 .header {
   border-bottom: 1px solid var(--border-color-2);
 }
+.header.scrolled {
+  background-color: var(--main-color);
+}
 .header-logo img {
   max-height: 35px;
   background-color: transparent;
-}
-.header-logo span {
-  color: var(--main-color);
 }
 .header .menu-item {
   display: inline-block;
@@ -431,42 +436,14 @@ textarea.form-control {
 .header .menu-item a:hover,
 .header .sub-menu-item:hover > a {
   color: var(--main-color);
+  text-decoration: 2px underline var(--main-color);
+  transition: 0.3s ease;
 }
 .header .menu-item > a i {
   font-size: 13px;
   margin-left: 3px;
   pointer-events: none;
   transition: transform 0.3s ease;
-}
-.header .sub-menu {
-  position: absolute;
-  top: 100%;
-  background-color: var(--white);
-  left: 0;
-  width: 210px;
-  padding: 10px 0;
-  border-radius: 5px;
-  box-shadow: var(--shadow);
-  transition: all 0.3 ease;
-  z-index: 2;
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(10px);
-}
-@media (min-width: 992px) {
-  .header .menu-item:hover > .sub-menu {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-.header .sub-menu-item a {
-  display: block;
-  padding: 10px 20px;
-  color: var(--black-90);
-  text-transform: capitalize;
-  font-weight: 400;
-  transition: color 0.3s ease;
 }
 .header-backdrop,
 .header-close-btn,
@@ -527,7 +504,7 @@ textarea.form-control {
   opacity: 1;
 }
 .banner-text h1 {
-  font-family: 'Plus Jakarta Sans', sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
   font-size: 3.375rem;
   font-weight: 1000;
 }
@@ -553,11 +530,11 @@ textarea.form-control {
  23. =reason section
  ------------------------------ */
 .reason-section {
-  background-color: var(--body-grey-color);
+  background-color: var(--green-light);
   border-radius: 25px;
 }
 .reason-section i {
-  color: var(--black-90);
+  color: var(--black-71);
 }
 .reason-section .reason-section-row {
   margin: auto;
@@ -583,6 +560,9 @@ textarea.form-control {
 .why-certif-section .item-inner {
   margin-left: 2px;
 }
+.why-certif-section i {
+  color: var(--dark-blue-icon);
+}
 
 /* ----------------------------
  23. =facilty-1 section
@@ -592,7 +572,7 @@ textarea.form-control {
   border-radius: 25px;
 }
 .facility-section i {
-  color: var(--orange-light);
+  color: var(--dark-blue);
 }
 .facility-section .facility-1-section-section-row {
   margin: auto;
@@ -717,6 +697,7 @@ textarea.form-control {
 .register-section img {
   max-width: 300px;
 }
+
 .text-align-center {
   text-align: center;
 }
@@ -795,15 +776,22 @@ textarea.form-control {
 }
 .payment-section .card {
   text-align: center;
+  background-color: var(--white);
   margin-bottom: 5px;
-  background-color: var(--main-color);
-  color: var(--white);
+  color: var(--black-70);
   border-radius: 15px;
 }
-.payment-section .card i {
+.payment-section .card:hover {
+  background-color: var(--main-color);
   color: var(--white);
+  transition: var(--trans-03);
 }
-.payment-section .card-title {
+.payment-section .card i,
+.payment-section .card .card-title {
+  color: var(--main-color);
+}
+.payment-section .card:hover i,
+.payment-section .card:hover .card-title {
   color: var(--white);
 }
 
