@@ -294,10 +294,13 @@
     margin-top: -15px;
     width: 225px;
   }
-  .payment-flow-section img {
-    margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+  .payment-flow-section .change-position {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .payment-flow-section .change-position img {
+    margin-left: 10px;
   }
   .payment-flow-section .col-5 {
     margin-left: 15px;

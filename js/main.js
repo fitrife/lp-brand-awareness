@@ -11,13 +11,16 @@ window.addEventListener("load", () => {
 /* ----------------------------
     header menu
 ------------------------------- */
-$(window).on("scroll", function () {
-  if ($(window).scrollTop()) {
-    $("header").addClass("black");
-  } else {
-    $("header").removeClass("black");
-  }
-});
+// $(window).on("scroll", function () {
+//   if ($(window).scrollTop()) {
+//     $("header").addClass("black");
+//   } else {
+//     $("header").removeClass("black");
+//   }
+// });
+// $(window).scroll(function () {
+//   $("nav").toggleClass("scrolled", $(this).scrollTop() > 100);
+// });
 
 function headerMenu() {
   const menu = document.querySelector(".js-header-menu"),
