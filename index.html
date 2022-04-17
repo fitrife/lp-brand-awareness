@@ -1525,29 +1525,35 @@
             <h5 class="modal-title" id="form-register">Form Register</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-          <form action="https://formsubmit.co/fitrifebriani99@gmail.com" method="POST">
+          <!-- <form action="https://formsubmit.co/fitrifebriani99@gmail.com" method="POST"> -->
+          <div class="alert alert-success alert-dismissible fade show d-none send-alert" role="alert"><strong>Terimakasih sudah mendaftar!</strong> Data diri anda sudah kami terima. Admin kami akan menghubungi anda segera.</div>
+          <form name="ak3u-register-form" method="post">
             <div class="modal-body">
-              <div class="mb-3">
+              <!-- <div class="form-group mb-3">
                 <label for="category" class="form-label">Jenis Pembinaan</label>
                 <input class="form-control" type="text" name="_subject" value="Ahli K3 Umum" placeholder="Ahli K3 Umum" aria-label="Ahli K3 Umum" disabled />
-              </div>
-              <div class="mb-3">
+              </div> -->
+              <div class="form-group mb-3">
                 <label for="name" class="form-label">Nama Lengkap</label>
-                <input type="text" class="form-control" id="name" placeholder="Isi Nama Lengkap Anda" required />
+                <input type="text" class="form-control" id="name" placeholder="Isi Nama Lengkap Anda" name="nama" required />
               </div>
-              <div class="mb-3">
+              <div class="form-group mb-3">
                 <label for="email" class="form-label">Alamat Email</label>
-                <input type="email" class="form-control" id="email" placeholder="nama@mail.com" required />
+                <input type="email" class="form-control" id="email" placeholder="nama@mail.com" name="email" required />
               </div>
-              <div class="mb-3">
+              <div class="form-group mb-3">
                 <label for="phone" class="form-label">Nomor Telepon</label>
-                <input type="text" class="form-control" id="phone" placeholder="Isi Nomor Telepon atau Whatsapp" required />
+                <input type="text" class="form-control" id="phone" placeholder="Isi Nomor Telepon atau Whatsapp" name="telepon" required />
               </div>
             </div>
-            <input type="hidden" name="_next" value="index.html" />
+            <!-- <input type="hidden" name="_next" value="index.html" /> -->
             <div class="modal-footer">
-              <button type="button" class="btn btn-theme-2" data-bs-dismiss="modal">Batal</button>
-              <button type="submit" class="btn btn-theme">Kirim</button>
+              <button type="reset" class="btn btn-danger">Reset</button>
+              <button type="submit" class="btn btn-primary btn-send" name="send">Kirim</button>
+              <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                Loading...
+              </button>
             </div>
           </form>
         </div>
@@ -1558,5 +1564,32 @@
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/b5-lightbox.bundle.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+      const scriptURL = "https://script.google.com/macros/s/AKfycbxIFnO55dwJzNyCWv8y5MbAnvyfAHNIl2IYa4Vt2cxCK-l8F7KLdXTitfnLYAe8XdEjKw/exec";
+      const form = document.forms["ak3u-register-form"];
+      const btnSend = document.querySelector(".btn-send");
+      const btnLoading = document.querySelector(".btn-loading");
+      const sendAlert = document.querySelector(".send-alert");
+
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        // when submit click
+        // show loading button, fade send button
+        btnLoading.classList.toggle("d-none");
+        btnSend.classList.toggle("d-none");
+        fetch(scriptURL, { method: "POST", body: new FormData(form) })
+          .then((response) => {
+            // show send button, fade loading button
+            btnLoading.classList.toggle("d-none");
+            btnSend.classList.toggle("d-none");
+            // show alert
+            sendAlert.classList.toggle("d-none");
+            // reset form
+            form.reset();
+            console.log("Success!", response);
+          })
+          .catch((error) => console.error("Error!", error.message));
+      });
+    </script>
   </body>
 </html>
