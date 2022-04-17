@@ -131,29 +131,17 @@
   .banner-text h1 {
     font-size: 35px;
   }
-  .register-section .section-title .sub-title {
-    font-size: 30px;
+  .register-section {
+    justify-content: left;
   }
-  .register-section .steps-number-circle {
-    width: 68px;
-    height: 68px;
+  .register-section .steps-heading-h3 {
+    text-align: left;
   }
-  .register-section .steps-number {
-    color: var(--white);
-    font-size: 24px;
-    font-weight: 900;
+  .register-section .steps-p {
+    text-align: left;
   }
-  .payment-flow-section .section-title .sub-title {
-    font-size: 30px;
-  }
-  .payment-flow-section .steps-number-circle {
-    width: 68px;
-    height: 68px;
-  }
-  .payment-flow-section .steps-number {
-    color: var(--white);
-    font-size: 24px;
-    font-weight: 900;
+  .register-section .col-5 {
+    margin-left: 5px;
   }
 }
 
@@ -164,11 +152,23 @@
   .box {
     padding: 20px 15px;
   }
-  .banner-text {
-    margin: auto;
+  .header-logo {
+    width: 200px;
   }
-  .banner-text h1 {
-    font-size: 24px;
+  .banner-section {
+    max-height: 90vh;
+    background-position: 60%;
+  }
+  .banner-section .banner-text {
+    margin-top: -100px;
+    margin-left: 10px;
+  }
+  .banner-section .banner-text h1 {
+    font-size: 2.2rem;
+    width: 300px;
+  }
+  .banner-section .banner-text p {
+    width: 350px;
   }
   .section-title .title,
   h3,
@@ -177,35 +177,89 @@
   }
   .form-title,
   .section-title .sub-title {
-    font-size: 22px;
+    font-size: 1.7rem;
   }
-  .relation-section .relation-items .item {
-    flex: 0 0 100%;
-    max-width: 100%;
+  .section-title .title {
+    font-size: 1.7rem;
+    line-height: 2.2rem;
   }
-  .steps-number-circle {
-    width: 62px;
-    height: 62px;
+  .relation-section {
+    margin: auto;
   }
-  .steps-number {
-    color: var(--white);
-    font-size: 22px;
-    font-weight: 900;
+  .relation-item {
+    display: flex;
+    justify-content: center;
   }
-  .register-section img {
-    margin-top: 40px;
-    margin-left: auto;
-    margin-right: auto;
+  .relation-section img {
+    width: 100px;
+    margin-top: -10px;
+    margin-bottom: -10px;
+  }
+  .register-section {
+    justify-content: center;
+  }
+  .register-section .steps-heading-h3 {
+    text-align: center;
+  }
+  .register-section .steps-p {
+    text-align: center;
+  }
+  .register-section .change-position {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .register-section .change-position img {
+    margin-left: 130px;
   }
   .register-section .col-5 {
     margin-left: 5px;
   }
-  .register-section .col-1 {
-    margin-right: 20px;
-    margin-left: 20px;
+  .schedule-section img {
+    display: flex;
+    margin: auto;
+  }
+  .testimonial-section {
+    text-align: center;
   }
   .payment-section i {
     font-size: 70px;
+  }
+  .payment-flow-section {
+    justify-content: center;
+  }
+  .payment-flow-section .steps-heading-h3 {
+    text-align: center;
+  }
+  .payment-flow-section .steps-p {
+    text-align: center;
+  }
+  .payment-flow-section .change-position {
+    display: flex;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+  .payment-flow-section .change-position img {
+    margin-left: 130px;
+  }
+  .payment-flow-section .col-5 {
+    margin-left: 5px;
+  }
+  .location-section .maps {
+    display: flex;
+    text-align: center;
+  }
+  .support-section {
+    margin: auto;
+  }
+  .support-item {
+    display: flex;
+    justify-content: center;
+  }
+  .support-section img {
+    width: 120px;
+    margin-top: -10px;
+    margin-bottom: -10px;
   }
 }
 
@@ -232,11 +286,15 @@
   .banner-section .banner-text p {
     width: 210px;
   }
+  .relation-section img {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
   .relation-item {
     margin-top: -12%;
     margin-bottom: -12%;
-    margin-left: 10px;
-    margin-left: 10px;
+    margin-left: 20px;
+    margin-right: 10px;
   }
   .reason-section .card {
     margin: 0.5rem;
@@ -321,6 +379,9 @@
     color: var(--white);
     font-size: 20px;
     font-weight: 900;
+  }
+  .gallery-section img {
+    margin-bottom: 10px;
   }
   .apply-section .apply-title {
     font-size: 20px;
