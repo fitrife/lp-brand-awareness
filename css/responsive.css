@@ -255,9 +255,8 @@
     background-color: transparent;
     border: 0px;
   }
-  .register-section .steps-number-circle {
-    width: 58px;
-    height: 58px;
+  .certificate-section .icon {
+    margin-right: -5px;
   }
   .register-section .change-position {
     display: flex;
@@ -265,7 +264,7 @@
     text-align: center;
   }
   .register-section .change-position img {
-    margin-left: 10px;
+    margin-left: 70px;
   }
   .register-section .steps-number {
     color: var(--white);
@@ -294,13 +293,16 @@
     margin-top: -15px;
     width: 225px;
   }
+  .testimonial-section {
+    text-align: center;
+  }
   .payment-flow-section .change-position {
     display: flex;
     flex-direction: column-reverse;
     text-align: center;
   }
   .payment-flow-section .change-position img {
-    margin-left: 10px;
+    margin-left: 70px;
   }
   .payment-flow-section .col-5 {
     margin-left: 15px;
@@ -320,6 +322,15 @@
     font-size: 20px;
     font-weight: 900;
   }
+  .apply-section .apply-title {
+    font-size: 20px;
+  }
+  .location-section i {
+    color: var(--black-90);
+  }
+  .location-section .maps {
+    margin-top: 20px;
+  }
   .footer-item {
     text-align: center;
   }
@@ -327,6 +338,7 @@
     display: block;
     margin: 0 60% 0 60%;
   }
+
   .header-logo a {
     font-size: 22px;
   }

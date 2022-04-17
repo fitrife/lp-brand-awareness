@@ -588,6 +588,9 @@ textarea.form-control {
 .certificate-section i {
   color: var(--green);
 }
+.certificate-section .icon {
+  padding-right: 0px;
+}
 
 /* ----------------------------
  26. =promo section
@@ -738,7 +741,7 @@ textarea.form-control {
   color: var(--black-970);
 }
 .apply-section .apply-title {
-  font-family: "Nunito", sans-serif;
+  font-family: "Poppins", sans-serif;
   color: var(--white);
   font-size: 28px;
   font-weight: 400;
