@@ -139,12 +139,12 @@ i {
 .row {
   --bs-gutter-x: 30px;
 }
-/* hr {
+hr {
   display: flex;
   margin: auto;
-  border: 2px solid var(--main-color);
-  width: 50%;
-} */
+  border: .5px solid var(--border-color-1);
+  width: 75%;
+}
 
 /* ----------------------------
  07. =animation keyframes
