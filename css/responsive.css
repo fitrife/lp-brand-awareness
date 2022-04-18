@@ -146,6 +146,10 @@
 }
 
 @media (max-width: 767px) {
+  body {
+    max-width: 767px;
+    min-width: 479px;
+  }
   .container {
     --bs-gutter-x: 15px;
   }
@@ -264,6 +268,9 @@
 }
 
 @media (max-width: 479px) {
+  body {
+    max-width: 479px;
+  }
   .section-title .title {
     font-size: 1.5rem;
     line-height: 2rem;
