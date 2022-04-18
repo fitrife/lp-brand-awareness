@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/responsive.css" />
     <link rel="stylesheet" class="js-color-style" href="css/colors/color-5.css" />
+    <link rel="stylesheet" href="vendor/floating-whatsapp-master/floating-wpp.css">
   </head>
 
   <body>
@@ -26,6 +27,8 @@
     </div>
     <!-- page loader end -->
 
+    <div id="myDiv"></div>
+
     <!-- main wrapper start -->
     <div class="main-wrapper">
       <!-- header start -->
@@ -34,7 +37,7 @@
           <div class="header-main d-flex justify-content-between align-items-center">
             <div class="header-logo">
               <a href="#">
-                <img src="img/logo-text.png" alt="header logo" />
+                <img src="img/logo.png" alt="header logo" />
               </a>
             </div>
             <button type="button" class="header-hamburger-btn js-header-menu-toggler">
@@ -65,7 +68,7 @@
             <div class="col-6 col-md-6 banner-card p-3">
               <div class="banner-text">
                 <h1 class="mb-3 me-1 text-capitalize">Selamat Datang di <span>PT. Intan Cahaya Mandiri</span></h1>
-                <p class="mb-4">Pusat pelatihan K3 Umum Sertifikasi Kemnaker dan BNSP. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam, dolore.</p>
+                <p class="mb-4">Pusat pelatihan K3 Umum Sertifikasi Kemnaker dan BNSP.</p>
                 <button class="btn btn-theme" data-bs-toggle="modal" data-bs-target="#form-register">Daftar Sekarang</button>
               </div>
             </div>
@@ -1286,13 +1289,30 @@
 
       <!-- payment-flow section start -->
       <section class="payment-flow-section section-padding">
-        <div class="row justify-content-center">
-          <div class="col-md-8">
-            <div class="section-title text-center">
-              <h1 class="title">cara <span>pembayaran</span></h1>
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8">
+              <div class="section-title text-center">
+                <h1 class="title">cara <span>pembayaran</span></h1>
+              </div>
             </div>
           </div>
-        </div>
+          <div class="row payment-flow-row justify-content-center">
+            <div class="col-10 col-sm-7 col-md-6 shadow p-3 mb-2 rounded card ms-2 me-2">
+              <div class="card-body text-center">
+                <div class="icon mb-3 text-center">
+                  <i class="fab fa-cc-visa fa-5x"></i>
+                </div>
+                <p class="card-text mb-4">
+                  <span class="fw-bold fs-2">Bank Mandiri</span>  <br>
+                  Nomor Rekening : <strong class="fw-bold">13700 1936 3577</strong><br>
+                  Atas Nama : <strong class="fw-bold">PT. Intan Cahaya Mandiri</strong>
+                </p>
+                <!-- <button class="btn btn-theme" data-toggle="lightbox">Panduan Lengkap</button> -->
+              </div>
+            </div>
+          </div>
+        <!-- Payment Flow Start
         <div class="text-align-center">
           <div class="row justify-content-center mt-2 ms-md-5 me-0">
             <div class="col-10 col-md-5">
@@ -1351,6 +1371,8 @@
             </div>
           </div>
         </div>
+        Payment Flow End -->
+      </div>
       </section>
       <!-- payment-flow section end -->
 
@@ -1413,7 +1435,7 @@
       <!-- support section end -->
 
       <!-- gallery section start -->
-      <section class="gallery-section section-padding" id="location">
+      <section class="gallery-section section-padding" id="gallery">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-md-8">
@@ -1561,8 +1583,25 @@
     </div>
     <!-- form register modal end -->
 
+     <!-- payment flow modal start -->
+     <div class="modal fade" id="payment-flow-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img src="img/payment/payment-method.png" class="modal-img" alt="modal img" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- payment flow modal end -->
+
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/b5-lightbox.bundle.min.js"></script>
+    <script type="text/javascript" src="vendor/floating-whatsapp-master/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="vendor/floating-whatsapp-master/floating-wpp.min.js"></script>  
     <script src="js/main.js"></script>
     <script>
       const scriptURL = "https://script.google.com/macros/s/AKfycbxIFnO55dwJzNyCWv8y5MbAnvyfAHNIl2IYa4Vt2cxCK-l8F7KLdXTitfnLYAe8XdEjKw/exec";
@@ -1591,7 +1630,22 @@
           .catch((error) => console.error("Error!", error.message));
       });
     </script>
-    <script>
+    <script type="text/javascript">
+      $(function () {
+        $('#myDiv').floatingWhatsApp({
+          phone: '6282119654575',
+          popupMessage: 'Halo,\nAda yang bisa kami bantu ?',
+          message: "Hi Admin! Saya tertarik nih untuk mendaftar program Ahli K3 Umum!",
+          showPopup: true,
+          showOnIE: false,
+          headerTitle: 'Chat Admin Yuk',
+          position: 'right',
+          size: '50px',
+          zIndex: 1
+        });
+      });
+    </script>
+    <!-- <script>
       var url = 'https://wati-integration-service.clare.ai/ShopifyWidget/shopifyWidget.js?34994';
       var s = document.createElement('script');
       s.type = 'text/javascript';
@@ -1605,7 +1659,7 @@
         "borderRadius":"25",
         "marginLeft":"50",
         "marginBottom":"50",
-        "marginRight":"50",
+        "marginRight":"0",
         "position":"left"
     },
     "brandSetting":{
@@ -1626,6 +1680,6 @@
       };
       var x = document.getElementsByTagName('script')[0];
       x.parentNode.insertBefore(s, x);
-  </script>
+  </script> -->
   </body>
 </html>

@@ -417,6 +417,7 @@ textarea.form-control {
 .header-logo img {
   max-height: 35px;
   background-color: transparent;
+  z-index: 1;
 }
 .header .menu-item {
   display: inline-block;
@@ -500,6 +501,8 @@ textarea.form-control {
 }
 .banner-section .banner-text {
   opacity: 1;
+  font-size: larger;
+  font-weight: bold;
 }
 .banner-text h1 {
   font-family: "Plus Jakarta Sans", sans-serif;
@@ -806,31 +809,16 @@ textarea.form-control {
   color: var(--white);
 }
 
-.payment-flow-section .steps-number-circle {
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  width: 80px;
-  height: 80px;
-  margin-right: auto;
-  margin-left: -10px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -webkit-align-items: center;
-  -ms-flex-align: center;
-  align-items: center;
-  border-radius: 50px;
-  background-color: var(--green);
+/* ----------------------------
+ 28. =payment flow section
+ ------------------------------ */
+.payment-flow-section .card {
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
-.payment-flow-section .steps-number {
-  color: var(--white);
-  font-size: 30px;
-  font-weight: 900;
+.payment-flow-row .card-body i {
+  color: var(--black-90);
 }
 .payment-flow-section .steps-heading-h3 {
   text-align: left;
