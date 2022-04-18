@@ -512,6 +512,7 @@ textarea.form-control {
 .banner-text h1 span {
   background-color: var(--main-color);
   color: var(--body-grey-color);
+  font-size: 3rem;
 }
 .banner-section button {
   border-radius: 25px;
@@ -573,10 +574,6 @@ textarea.form-control {
 /* ----------------------------
  23. =program section
  ------------------------------ */
- .program-section {
-  background-color: var(--body-grey-color);
-  border-radius: 25px;
- }
  .program-section .card {
    margin: 0 auto;
    float: none;
@@ -587,6 +584,10 @@ textarea.form-control {
 /* ----------------------------
  23. =facilty-1 section
  ------------------------------ */
+ .facility-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+ }
 .facility-section i {
   color: var(--black-90);
 }
@@ -617,10 +618,6 @@ textarea.form-control {
 /* ----------------------------
  26. =scheme section
  ------------------------------ */
- .scheme-section {
-  background-color: var(--body-grey-color);
-  border-radius: 25px;
- }
 .scheme-section .card {
   border-radius: 25px;
   transition: all 0.3s ease;
@@ -719,6 +716,10 @@ textarea.form-control {
 /* ----------------------------
  26. =register section
  ------------------------------ */
+ .register-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+ }
 .register-section img {
   max-width: 300px;
 }
@@ -779,10 +780,6 @@ textarea.form-control {
 /* ----------------------------
  26. =testimonial section
  ------------------------------ */
- .testimonial-section {
-  background-color: var(--body-grey-color);
-  border-radius: 25px;
-}
 .testimonial-section .testimonial-section-row {
   margin: auto;
 }
@@ -793,6 +790,11 @@ textarea.form-control {
 /* ----------------------------
  27. =payment section
  ------------------------------ */
+
+ .payment-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+ }
 .payment-section .payment-section-row {
   margin: auto;
 }
@@ -823,10 +825,6 @@ textarea.form-control {
 /* ----------------------------
  28. =payment flow section
  ------------------------------ */
- .payment-flow-section {
-  background-color: var(--body-grey-color);
-  border-radius: 25px;
- }
 .payment-flow-section .card {
   border-radius: 25px;
   transition: all 0.3s ease;
@@ -847,10 +845,6 @@ textarea.form-control {
 /* ----------------------------
  28. =gallery section
  ------------------------------ */
-.gallery-section {
-  background-color: var(--body-grey-color);
-  border-radius: 25px;
-}
 .gallery-section img {
   background-color: var(--white);
   padding: 15px;
@@ -873,10 +867,18 @@ textarea.form-control {
 /* ----------------------------
  28. =support section
  ------------------------------ */
+ .support-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+ }
 
 /* ----------------------------
  28. =about section
  ------------------------------ */
+ .about-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+ }
 
 /* ----------------------------
  29. =location section

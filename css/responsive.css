@@ -278,6 +278,12 @@
   .main-wrapper {
     max-width: 479px;
   }
+  .header-hamburger-btn {
+    display: block;
+  }
+  .header-hamburger-btn {
+    margin-right: 5px;
+  }
   .section-title .title {
     font-size: 1.5rem;
     line-height: 2rem;
