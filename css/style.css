@@ -480,7 +480,7 @@ textarea.form-control {
  21. =banner section
  ------------------------------ */
 .banner-section {
-  background-image: url("../img/banner-img.png");
+  background-image: url("../img/banner.jpg");
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
