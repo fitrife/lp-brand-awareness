@@ -571,6 +571,16 @@ textarea.form-control {
 }
 
 /* ----------------------------
+ 23. =program section
+ ------------------------------ */
+ .program-section .card {
+   margin: 0 auto;
+   float: none;
+   margin-bottom: 10px;
+   text-align: center;
+ }
+ 
+/* ----------------------------
  23. =facilty-1 section
  ------------------------------ */
 .facility-section {
@@ -601,49 +611,49 @@ textarea.form-control {
 }
 
 /* ----------------------------
- 26. =promo section
+ 26. =scheme section
  ------------------------------ */
-.promo-section {
+.scheme-section {
   background-color: var(--body-grey-color);
   border-radius: 25px;
 }
-.promo-2-section {
+.scheme-section {
   background-color: var(--body-grey-color);
   border-radius: 25px;
 }
-.promo-2-section .card {
+.scheme-section .card {
   border-radius: 25px;
   transition: all 0.3s ease;
   cursor: pointer;
 }
-.promo-2-section .card:hover {
+.scheme-section .card:hover {
   background: var(--main-color);
   color: var(--white);
 }
-.promo-2-section .card:hover h2,
-.promo-2-section .card:hover strong,
-.promo-2-section .card:hover i {
+.scheme-section .card:hover h2,
+.scheme-section .card:hover strong,
+.scheme-section .card:hover i {
   color: var(--white);
 }
-.promo-section .promo-section-row {
+.scheme-section .scheme-section-row {
   margin: auto;
 }
-.promo-item {
+.scheme-item {
   margin-top: auto;
 }
-.promo-section .card {
+.scheme-section .card {
   text-align: left;
   margin-bottom: 5px;
 }
-.promo-section .price-discount {
+.scheme-section .price-discount {
   font-size: 18px;
   color: var(--black-90);
   text-decoration: line-through;
 }
-.promo-section .card-price {
+.scheme-section .card-price {
   font-size: 18px;
 }
-.promo-fee-wrapper {
+.scheme-wrapper {
   display: -ms-grid;
   display: grid;
   grid-auto-columns: 1fr;
@@ -654,7 +664,7 @@ textarea.form-control {
   -ms-grid-rows: auto;
   grid-template-rows: auto;
 }
-.promo-fee-pricing-card {
+.scheme-pricing-card {
   display: flex;
   padding: 40px 31px 50px;
   -webkit-box-orient: vertical;
@@ -669,11 +679,11 @@ textarea.form-control {
   border-radius: 16px;
   background-color: #fff;
 }
-.promo-fee-heading-h3 {
+.scheme-heading-h3 {
   font-size: 18px;
   line-height: 25px;
 }
-.promo-fee-price {
+.scheme-price {
   margin-top: 20px;
   -webkit-align-self: auto;
   -ms-flex-item-align: auto;
@@ -687,14 +697,14 @@ textarea.form-control {
   font-size: 22px;
   font-weight: 600;
 }
-.promo-fee-divider {
+.scheme-divider {
   width: 100%;
   height: 2px;
   margin-top: 10px;
   margin-bottom: 10px;
   background-color: var(--border-color-1);
 }
-.promo-fee-benefit-wrapper {
+.scheme-benefit-wrapper {
   display: flex;
   margin-bottom: 15px;
   -webkit-box-align: center;
@@ -702,7 +712,7 @@ textarea.form-control {
   -ms-flex-align: center;
   align-items: center;
 }
-.promo-fee-benefit-wrapper i {
+.scheme-benefit-wrapper i {
   color: var(--main-color);
 }
 
