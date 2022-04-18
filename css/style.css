@@ -617,6 +617,10 @@ textarea.form-control {
 /* ----------------------------
  26. =scheme section
  ------------------------------ */
+ .scheme-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+ }
 .scheme-section .card {
   border-radius: 25px;
   transition: all 0.3s ease;
@@ -715,10 +719,6 @@ textarea.form-control {
 /* ----------------------------
  26. =register section
  ------------------------------ */
- .register-section {
-  background-color: var(--body-grey-color);
-  border-radius: 25px;
-}
 .register-section img {
   max-width: 300px;
 }
@@ -738,6 +738,7 @@ textarea.form-control {
 .steps-p {
   text-align: left;
 }
+
 
 /* ----------------------------
  26. =schedule section
@@ -776,8 +777,12 @@ textarea.form-control {
 }
 
 /* ----------------------------
- 27. =testimonal section
+ 26. =testimonial section
  ------------------------------ */
+ .testimonial-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+}
 .testimonial-section .testimonial-section-row {
   margin: auto;
 }
@@ -788,10 +793,6 @@ textarea.form-control {
 /* ----------------------------
  27. =payment section
  ------------------------------ */
-.payment-section {
-  background-color: var(--body-grey-color);
-  border-radius: 25px;
-}
 .payment-section .payment-section-row {
   margin: auto;
 }
@@ -822,6 +823,10 @@ textarea.form-control {
 /* ----------------------------
  28. =payment flow section
  ------------------------------ */
+ .payment-flow-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+ }
 .payment-flow-section .card {
   border-radius: 25px;
   transition: all 0.3s ease;
