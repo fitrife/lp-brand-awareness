@@ -573,6 +573,10 @@ textarea.form-control {
 /* ----------------------------
  23. =program section
  ------------------------------ */
+ .program-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+ }
  .program-section .card {
    margin: 0 auto;
    float: none;
@@ -583,10 +587,6 @@ textarea.form-control {
 /* ----------------------------
  23. =facilty-1 section
  ------------------------------ */
-.facility-section {
-  background-color: var(--body-grey-color);
-  border-radius: 25px;
-}
 .facility-section i {
   color: var(--black-90);
 }
@@ -603,6 +603,10 @@ textarea.form-control {
 /* ----------------------------
  26. =certificate section
  ------------------------------ */
+ .certificate-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+ }
 .certificate-section i {
   color: var(--green);
 }
@@ -613,14 +617,6 @@ textarea.form-control {
 /* ----------------------------
  26. =scheme section
  ------------------------------ */
-.scheme-section {
-  background-color: var(--body-grey-color);
-  border-radius: 25px;
-}
-.scheme-section {
-  background-color: var(--body-grey-color);
-  border-radius: 25px;
-}
 .scheme-section .card {
   border-radius: 25px;
   transition: all 0.3s ease;
@@ -719,6 +715,10 @@ textarea.form-control {
 /* ----------------------------
  26. =register section
  ------------------------------ */
+ .register-section {
+  background-color: var(--body-grey-color);
+  border-radius: 25px;
+}
 .register-section img {
   max-width: 300px;
 }
