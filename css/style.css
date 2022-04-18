@@ -486,7 +486,7 @@ textarea.form-control {
   display: -ms-flexbox;
   display: flex;
   padding-top: 13rem;
-  padding-bottom: 6.5rem;
+  padding-bottom: 7rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -496,7 +496,7 @@ textarea.form-control {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-position: 50% 50%;
+  background-position: 40% 45%;
   background-size: cover;
 }
 .banner-section .banner-text {
