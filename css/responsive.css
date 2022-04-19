@@ -163,6 +163,9 @@
   .header-logo {
     width: 200px;
   }
+  button.header-hamburger-btn {
+    margin-right: 0;
+}
   .banner-section {
     max-height: 90vh;
     background-position: 60%;
@@ -272,18 +275,11 @@
 }
 
 @media (max-width: 479px) {
-  body {
-    max-width: 479px;
-  }
-  .main-wrapper {
-    max-width: 479px;
-  }
-  .header-hamburger-btn {
-    display: block;
-  }
-  .header-hamburger-btn {
-    margin-right: 5px;
-  }
+  button.header-hamburger-btn {
+    right: 0;
+    margin-right: 30px;
+    position: fixed;
+}
   .section-title .title {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -291,9 +287,10 @@
   .header-logo {
     width: 200px;
   }
+  
   .banner-section {
-    max-height: 90vh;
-    background-position: 60%;
+    max-height: 100vh;
+    background-position: 50%;
   }
   .banner-section .banner-text {
     margin-top: -100px;

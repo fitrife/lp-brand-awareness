@@ -83,7 +83,8 @@ body {
   color: var(--black-70);
   min-height: 100vh;
   overflow-x: hidden;
-  margin-left: 0px;
+  left: 0;
+  right: 0;
 }
 a {
   color: var(--main-color);
@@ -234,6 +235,7 @@ hr {
   font-weight: 500;
   padding: 8px 20px;
   transition: all 0.3s ease;
+  border-radius: 10px;
 }
 .btn-theme:hover {
   color: var(--main-color);
@@ -415,7 +417,8 @@ textarea.form-control {
   right: 0%;
 }
 .header-logo img {
-  max-height: 35px;
+  margin-top: 10px;
+  max-height: 70px;
   background-color: transparent;
   z-index: 1;
 }
@@ -479,14 +482,14 @@ textarea.form-control {
 /* ----------------------------
  21. =banner section
  ------------------------------ */
-.banner-section {
-  background-image: url("../img/banner.jpg");
+ .banner-section {
+  background-image: url("../img/banner-img.png");
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   padding-top: 13rem;
-  padding-bottom: 7rem;
+  padding-bottom: 6.5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -webkit-flex-direction: column;
@@ -496,23 +499,24 @@ textarea.form-control {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  background-position: 40% 45%;
+  background-position: 50% 60%;
   background-size: cover;
 }
 .banner-section .banner-text {
+  margin-top: 0;
+  margin-bottom: 10%;
   opacity: 1;
   font-size: larger;
   font-weight: bold;
 }
 .banner-text h1 {
   font-family: "Plus Jakarta Sans", sans-serif;
-  font-size: 3.375rem;
+  font-size: 2.5rem;
   font-weight: 1000;
 }
 .banner-text h1 span {
   background-color: var(--main-color);
   color: var(--body-grey-color);
-  font-size: 3rem;
 }
 .banner-section button {
   border-radius: 25px;
@@ -622,6 +626,7 @@ textarea.form-control {
   border-radius: 25px;
   transition: all 0.3s ease;
   cursor: pointer;
+  border-radius: 15px;
 }
 .scheme-section .card:hover {
   background: var(--main-color);
@@ -780,11 +785,9 @@ textarea.form-control {
 /* ----------------------------
  26. =testimonial section
  ------------------------------ */
-.testimonial-section .testimonial-section-row {
-  margin: auto;
-}
-.testmonial-section-row img {
-  width: 100px;
+.testimonial-section img {
+  width: 70px;
+  margin: 10px 10px 10px 10px;
 }
 
 /* ----------------------------
