@@ -275,11 +275,6 @@
 }
 
 @media (max-width: 479px) {
-  button.header-hamburger-btn {
-    right: 0;
-    margin-right: 30px;
-    position: fixed;
-}
   .section-title .title {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -322,6 +317,8 @@
   .facility-section {
     font-size: 14px;
     color: var(--black-90);
+    display: flex;
+    align-content: center;
   }
   .facility-section i {
     font-size: 30px;

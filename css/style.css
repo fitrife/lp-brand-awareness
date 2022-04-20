@@ -550,13 +550,17 @@ textarea.form-control {
 .reason-section .reason-section-row {
   margin: auto;
 }
+.reason-section .icon {
+  margin: auto;
+  margin-bottom: -20px;
+  width: 150px;
+}
 .reason-item {
   margin-top: auto;
 }
 .reason-section .card {
   text-align: center;
-  margin-bottom: 5px;
-  border-radius: 15px;
+  margin-bottom: 25px;
 }
 
 /* ----------------------------
@@ -579,6 +583,8 @@ textarea.form-control {
  23. =program section
  ------------------------------ */
  .program-section .card {
+   margin-left: 10px;
+   margin-right: 10px;
    margin: 0 auto;
    float: none;
    margin-bottom: 10px;
@@ -604,6 +610,9 @@ textarea.form-control {
 .facility-section .card {
   text-align: center;
   margin-bottom: 5px;
+}
+.facility-section .icon {
+  margin-right: -25px;
 }
 /* ----------------------------
  26. =certificate section
@@ -725,6 +734,7 @@ textarea.form-control {
   background-color: var(--body-grey-color);
   border-radius: 25px;
  }
+ 
 .register-section img {
   max-width: 300px;
 }
@@ -788,6 +798,7 @@ textarea.form-control {
 .testimonial-section img {
   width: 70px;
   margin: 10px 10px 10px 10px;
+  border-radius: 50%;
 }
 
 /* ----------------------------
