@@ -561,6 +561,7 @@ textarea.form-control {
 .reason-section .card {
   text-align: center;
   margin-bottom: 25px;
+  border-radius: 15px;
 }
 
 /* ----------------------------
@@ -589,6 +590,7 @@ textarea.form-control {
    float: none;
    margin-bottom: 10px;
    text-align: center;
+   border-radius: 15px;
  }
  
 /* ----------------------------
@@ -601,19 +603,16 @@ textarea.form-control {
 .facility-section i {
   color: var(--black-90);
 }
-.facility-section .facility-1-section-section-row {
+.facility-section img {
   margin: auto;
 }
-.facility-item {
-  margin-top: auto;
+.facility-section .text-start {
+  margin: auto;
 }
-.facility-section .card {
-  text-align: center;
-  margin-bottom: 5px;
-}
-.facility-section .icon {
-  margin-right: -25px;
-}
+
+/* .facility-section .icon {
+  margin-left: 2px;
+} */
 /* ----------------------------
  26. =certificate section
  ------------------------------ */
