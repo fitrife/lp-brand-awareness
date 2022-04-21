@@ -592,6 +592,10 @@ textarea.form-control {
    text-align: center;
    border-radius: 15px;
  }
+ .program-section .card img {
+   width: 250px;
+   margin: auto;
+ }
  
 /* ----------------------------
  23. =facilty-1 section
